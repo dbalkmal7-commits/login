@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>enter</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="min-vh-100 d-flex align-items-center justify-content-center bg-app">
+        <div class="container" style="max-width: 820px;">
+            <!-- Login  -->
+            <section id="loginView" class="card bg-panel shadow-lg border-0 d-none">
+                <div class="card-body p-5">
+                    <h1 class="text-center text-teal mb-4">Smart Login System</h1>
+                    <form id="loginForm" novalidate>
+                        <div class="mb-3">
+                            <input id="loginEmail" type="text" class="form-control bg-input text-white" placeholder="Enter your email">
+                        </div>
+                        <div class="mb-3">
+                            <input id="loginPassword" type="password" class="form-control bg-input text-white" placeholder="Enter your password">
+                        </div>
+                        <div id="loginMsg" class="small text-center mb-3"></div>
+                        <button type="submit" class="btn btn-outline-info w-100">Login</button>
+                    </form>
+                    <p class="text-center text-muted mt-3">Don't have an account? <a href="#" id="goToSignup" class="link-teal">Sign Up</a></p>
+                </div>
+            </section>
+
+            <!-- Signup  -->
+            <section id="signupView" class="card bg-panel shadow-lg border-0 d-none">
+                <div class="card-body p-5">
+                    <h1 class="text-center text-teal mb-4">Smart Login System</h1>
+                    <form id="signupForm" novalidate>
+                        <div class="mb-3">
+                            <input id="suName" type="text" class="form-control bg-input text-white" placeholder="Enter your name">
+                        </div>
+                        <div class="mb-3">
+                            <input id="suEmail" type="text" class="form-control bg-input text-white" placeholder="Enter your email">
+                        </div>
+                        <div class="mb-1">
+                            <input id="suPassword" type="password" class="form-control bg-input text-white" placeholder="Enter password">
+                        </div>
+                        <div id="signupMsg" class="small text-center mb-3"></div>
+                        <button type="submit" class="btn btn-outline-info w-100">Sign Up</button>
+                    </form>
+                    <p class="text-center text-muted mt-3">You have an account? <a href="#" id="goToSignin" class="link-teal">Signin</a></p>
+                </div>
+            </section>
+
+            <!-- Home  -->
+            <section id="homeView" class="card bg-panel shadow-lg border-0 d-none">
+                <div class="card-body p-5 text-center">
+                    <h1 class="text-teal mb-3">Welcome, <span id="welcomeName"></span></h1>
+                    <button id="logoutBtn" class="btn btn-outline-danger px-5">Logout</button>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -16,7 +16,7 @@
     color:#11a0b3;text-decoration:underline
 }
 .bg-input{
-    background:#0e1e26;border:1px solid #1bb5c9
+    background:#dfebf1;border:1px solid #1bb5c9
 }
 .bg-input:focus{
     background:#0f242e;border-color:#35d0e5;box-shadow:0 0 0 .25rem rgba(219, 242, 245, 0.15)
